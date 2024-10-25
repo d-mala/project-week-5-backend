@@ -47,9 +47,9 @@ public class DatabaseInitializer implements CommandLineRunner {
 
         // 2. Creazione Postazioni
         List<Postazione> postazioni = new ArrayList<>();
-//        postazioni.add(new Postazione("P1", "Postazione Open Space", TipoPostazione.OPENSPACE, 5, edifici.get(0)));
-//        postazioni.add(new Postazione("P2", "Sala Riunioni Grande", TipoPostazione.SALA_RIUNIONI, 10, edifici.get(0)));
-//        postazioni.add(new Postazione("P3", "Postazione Privata", TipoPostazione.PRIVATO, 1, edifici.get(1)));
+        postazioni.add(new Postazione("P1", "Postazione Open Space", TipoPostazione.OPENSPACE, 5, edifici.get(0)));
+        postazioni.add(new Postazione("P2", "Sala Riunioni Grande", TipoPostazione.SALA_RIUNIONI, 10, edifici.get(0)));
+        postazioni.add(new Postazione("P3", "Postazione Privata", TipoPostazione.PRIVATO, 1, edifici.get(1)));
         postazioneService.salvaPostazioni(postazioni);
 
         // 3. Creazione Utenti casuali
