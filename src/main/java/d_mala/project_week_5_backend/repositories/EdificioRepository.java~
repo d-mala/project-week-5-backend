@@ -1,0 +1,7 @@
+package d_mala.project_week_5_backend.repositories;
+
+import d_mala.project_week_5_backend.entities.Postazione;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PostazioneRepository extends JpaRepository<Postazione, Long> {
+}
