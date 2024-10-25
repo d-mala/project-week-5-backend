@@ -32,7 +32,7 @@ public class Utente {
     @OneToMany(mappedBy = "utente")
     private List<Prenotazione> prenotazioni;
 
-    public Utente(String email, String nomeCompleto, String username) {
+    public Utente(String username, String nomeCompleto, String email) {
         this.email = email;
         this.nomeCompleto = nomeCompleto;
         this.username = username;

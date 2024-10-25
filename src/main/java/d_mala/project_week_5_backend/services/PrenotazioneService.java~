@@ -54,7 +54,7 @@ public class PrenotazioneService {
         prenotazione.setData(data);
         prenotazione.setUtente(utente);
         prenotazione.setPostazione(postazione);
-        log.info("Prenotazione confermata per utente: {}, postazione: {}, data: {}.", utente.getUsername(), postazione.getCodice(), data);
+        log.info("Prenotazione per utente: {}, postazione: {}, data: {} creata.", utente.getUsername(), postazione.getCodice(), data);
         return prenotazioneRepository.save(prenotazione);
     }
 }
